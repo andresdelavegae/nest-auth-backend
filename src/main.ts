@@ -12,7 +12,9 @@ async function bootstrap() {
       whitelist: true,
       forbidNonWhitelisted:true
     })
-  )
+  );
+
+  //jajajaja
   //Cuando desplegamos en la nube el puerto va a a variar, dependiendo del servicio, ahi se lo ponemos sino por default agarra el 3000
   await app.listen(process.env.PORT ?? 3000);
 }
